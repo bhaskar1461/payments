@@ -48,7 +48,7 @@ export default function PaymentMethods() {
       }
     } catch (error) {
       console.error('Failed to create order', error);
-      alert('Could not connect to backend on port 5000. Make sure the backend is running.');
+      alert('Payment service is temporarily unavailable. Please try again later.');
     } finally {
       setLoading(false);
     }
